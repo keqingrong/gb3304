@@ -1,6 +1,6 @@
 # GB/T 3304-1991
 
-中国各民族名称的罗马字母拼写法和代码
+Names of nationalities of China in romanization with codes 中国各民族名称的罗马字母拼写法和代码
 
 [![npm version](https://img.shields.io/npm/v/gb3304.svg)](https://www.npmjs.com/package/gb3304)
 
@@ -27,3 +27,7 @@ names.includes('藏族');
 ## 许可证
 
 MIT © Qingrong Ke
+
+## 参考
+
+- [GB/T 3304-1991 - 国家标准全文公开系统](http://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=E5C3271B62636C5DA6853A0DA23EBBA9)
