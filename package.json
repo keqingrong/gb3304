@@ -1,0 +1,41 @@
+{
+  "name": "gb3304",
+  "version": "1.0.0",
+  "description": "Names of nationalities of China in romanization with codes",
+  "main": "dist/gb3304.umd.js",
+  "module": "dist/gb3304.esm.js",
+  "types": "types/index.d.ts",
+  "sideEffects": false,
+  "files": [
+    "dist",
+    "types"
+  ],
+  "scripts": {
+    "clean": "rimraf dist",
+    "format": "prettier --write \"src/**/*.js\" --loglevel warn",
+    "build": "npm run clean && rollup -c && npm run minify",
+    "minify": "terser dist/gb3304.umd.js --comments -c -m -o dist/gb3304.umd.min.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keqingrong/gb3304.git"
+  },
+  "keywords": [
+    "china",
+    "gb3304",
+    "nation",
+    "nationality",
+    "romanization",
+    "minzu"
+  ],
+  "author": "Qingrong Ke <keqingrong@outlook.com> (https://keqingrong.github.io/)",
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "^2.2.1",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.35.1",
+    "rollup-plugin-json": "^4.0.0",
+    "terser": "^5.5.1"
+  }
+}
