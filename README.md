@@ -12,13 +12,27 @@ English | [简体中文](./README-zh-hans.md)
 npm install gb3304
 ```
 
+The CDN build is also available on jsDelivr:
+
+- [cdn.jsdelivr.net/npm/gb3304/dist/gb3304.esm.js](https://cdn.jsdelivr.net/npm/gb3304/dist/gb3304.esm.js)
+- [cdn.jsdelivr.net/npm/gb3304/dist/gb3304.umd.min.js](https://cdn.jsdelivr.net/npm/gb3304/dist/gb3304.umd.min.js)
+
 ## Usage
 
 ```js
+// Using ES modules
 import { data, names } from 'gb3304';
 
+// Using CommonJS modules
+const { data, names } = require('gb3304');
+```
+
+```js
 data.find((item => item.name === '汉族'));
 // {name: "汉族", romanization: "Han", code: "HA", digitalCode: "01"}
+
+data.find((item) => item.name === '朝鲜族')
+// {name: "朝鲜族", romanization: "Chosen", code: "CS", romanizationInternational: "Korean", digitalCode: "10"}
 
 names.includes('藏族');
 // true
