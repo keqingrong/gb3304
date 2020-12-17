@@ -1,4 +1,4 @@
-declare interface DataItem {
+export declare interface DataItem {
   /** 名族名称 */
   name: string;
   /** 罗马字母拼写法 */
@@ -11,6 +11,14 @@ declare interface DataItem {
   digitalCode: string;
 }
 
-export {
-  DataItem,
-};
+/**
+ * 中国各民族名称的罗马字母拼写法和代码
+ * Names of nationalities of China in romanization with codes
+ */
+export declare const data: DataItem[];
+
+/**
+ * 中国各民族名称
+ * Names of nationalities of China
+ */
+export declare const names: string[];
