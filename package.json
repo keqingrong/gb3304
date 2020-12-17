@@ -1,6 +1,6 @@
 {
   "name": "gb3304",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Names of nationalities of China in romanization with codes",
   "main": "dist/gb3304.umd.js",
   "module": "dist/gb3304.esm.js",
